@@ -1,11 +1,18 @@
-import React from 'react'
+import React from "react";
+
+import { motion } from "framer-motion";
 
 const SobreMim = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
       <h1>Sobre mim</h1>
-    </div>
-  )
-}
+      
+    </motion.div>
+  );
+};
 
-export default SobreMim
+export default SobreMim;

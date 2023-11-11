@@ -1,38 +1,82 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 /* font-family: 'Open Sans', sans-serif; */
-  
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #242424;
-    font-family: 'Open Sans', sans-serif;
+
+.navlist {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #242424;
+  font-family: "Open Sans", sans-serif;
+  height: 6em;
+}
+
+.navbar h1 {
+  font-size: 1.3em;
+  color: #fff;
+  padding: 0 15px;
+}
+
+.navlist ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navlist li {
+  padding: 0 15px;
+  list-style: none;
+  letter-spacing: 3px;
+}
+
+.navlist a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.navlist a:hover {
+  color: #ccc;
+}
+
+/* mobal menu */
+.mobal_menu {
+  display: none;
+}
+
+.open_menu {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2.5em;
+  display: none;
+}
+
+.close_menu {
+  color: #fff;
+  font-size: 2.5em;
+  display: none;
+}
+
+@media (width < 764px) {
+  .navlist {
+    display: none;
   }
 
-  .navbar h1 {
-    font-size: 1.3em ;
-    color: #fff;
-    padding: 0 15px;
-  }
-
-  .navbar ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-
-  .navbar li {
-    padding: 0 15px;
+  .navlist_mobal  ul {
     list-style: none;
   }
 
-  .navbar a {
+  .navlist_mobal a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.3em;
   }
 
-  .navbar a:hover {
-    color: #ccc;
+  .open_menu {
+    display: block;
+    margin-right: 1em;
   }
+}
