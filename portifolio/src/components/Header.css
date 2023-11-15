@@ -5,8 +5,7 @@
   align-items: center;
   justify-content: space-evenly;
   height: 8vh;
-  background-color: transparent;
-  backdrop-filter: blur(10px);
+  background-color: #242424;
   font-family: "Work Sans", sans-serif;
   position: fixed;
   width: 100vw;
@@ -91,8 +90,7 @@
 
 .nav__active {
   transform: translateX(0);
-  background-color: transparent;
-  backdrop-filter: blur(10px);
+  background-color: #242424;
   padding: 0;
   margin: 0;
 }
