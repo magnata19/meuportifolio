@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import minhaFoto from "../assets/eu.jpg";
 import ubatubaSP from "../assets/ubatubasp.jpeg";
 
-import Typewritter from 'typewriter-effect'
+import Typewritter from "typewriter-effect";
 
 const Home = () => {
   return (
@@ -16,25 +16,16 @@ const Home = () => {
     >
       <div className={styles.apresentacao}>
         <div className={styles.introducao}>
-          <h1><Typewritter
-          onInit={(typewritter) => {
-            typewritter.typeString("Ubatuba - SP").start()
-          }}
-          /></h1>
-          <p>
-            Já parou pra pensar que as vezes moramos em lugares maravilhosos e
-            as vezes nem nos damos conta disso ? Pois é, as vezes isso pode
-            acontecer, mas vamos falar dessa belezinha aqui,eu. Brincadeira,
-            Ubatuba-SP é uma cidade maravilhosa de se viver e super visitada
-            mensalmente por milhares de turistas.
-          </p>
-          <p>
-            Mas afinal, o que isso tem haver com programação ? Bom, é isso que
-            irei mostrar logo abaixo.
-          </p>
+          <h1>
+            <Typewritter
+              onInit={(typewritter) => {
+                typewritter.typeString("Davidson | Pacifico").start();
+              }}
+            />
+          </h1>
         </div>
       </div>
-        {/* segunda seção */}
+      {/* segunda seção */}
       <div className={styles.informacao}>
         <div className={styles.minhaArea}>
           <img src={minhaFoto} alt="eu" className={styles.minhaFoto} />
