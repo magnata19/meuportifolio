@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import minhaFoto from "../assets/eu.jpg";
 import ubatubaSP from "../assets/ubatubasp.jpeg";
 
+import Typewritter from 'typewriter-effect'
+
 const Home = () => {
   return (
     <motion.div
@@ -14,7 +16,11 @@ const Home = () => {
     >
       <div className={styles.apresentacao}>
         <div className={styles.introducao}>
-          <h1>Ubatuba - SP</h1>
+          <h1><Typewritter
+          onInit={(typewritter) => {
+            typewritter.typeString("Ubatuba - SP").start()
+          }}
+          /></h1>
           <p>
             Já parou pra pensar que as vezes moramos em lugares maravilhosos e
             as vezes nem nos damos conta disso ? Pois é, as vezes isso pode
