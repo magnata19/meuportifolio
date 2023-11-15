@@ -21,18 +21,18 @@ const Header = () => {
     <nav className="nav">
       <h1>&lt; Fullstack Developer /&gt;</h1>
       <ul className={active}>
-        <NavLink to="/">
-          <li className="nav__item">Home</li>
-        </NavLink>
-        <NavLink to="/sobremim">
-          <li className="nav__item">Sobre Mim</li>
-        </NavLink>
-        <NavLink>
-          <li className="nav__item">Projetos</li>
-        </NavLink>
-        <NavLink>
-          <li className="nav__item">Contato</li>
-        </NavLink>
+        <li className="nav__item">
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li className="nav__item">
+          <NavLink to="/sobremim">Sobre Mim</NavLink>
+        </li>
+        <li className="nav__item">
+          <NavLink>Projetos</NavLink>
+        </li>
+        <li className="nav__item">
+          <NavLink>Contato</NavLink>
+        </li>
       </ul>
 
       <div onClick={handleToggle} className={toggleIcon}>

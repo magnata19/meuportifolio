@@ -1,0 +1,54 @@
+.apresentacao {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  background-image: url("../assets/ubatubasp.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.minhaFoto {
+  padding: 15px;
+  width: 500px;
+  border-radius: 50px;
+}
+
+.introducao {
+  text-align: center;
+  color: #242424;
+  max-width: 800px;
+  font-weight: 500;
+}
+
+.introducao h1 {
+  color: #000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.introducao p {
+  font-size: 25px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.informacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.minhaArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.minhaHistoria {
+  max-width: 700px;
+}

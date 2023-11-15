@@ -3,11 +3,14 @@
 .nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 8vh;
-  background-color: #242424;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
   font-family: "Work Sans", sans-serif;
-  padding: 0 15px;
+  position: fixed;
+  width: 100vw;
+  padding: 0 20px;
 }
 
 .nav h1 {
@@ -23,6 +26,7 @@
   justify-content: space-around;
   gap: 3rem;
   list-style: none;
+  margin-right: 35px;
 }
 
 .nav__menu a {
@@ -59,7 +63,7 @@
     top: 5vh;
     right: 0;
     width: 40%;
-    height: 95vh;
+    height: 96vh;
     background-color: #242424;
     flex-direction: column;
     transform: translateX(100%);
@@ -72,12 +76,20 @@
     letter-spacing: 3px;
     font-weight: 300;
   }
+
+  .nav__item {
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
 }
 
 /* nav active */
 
 .nav__active {
   transform: translateX(0);
+  padding: 0;
+  margin: 0;
 }
 
 /* animacao botao hamburguer */
