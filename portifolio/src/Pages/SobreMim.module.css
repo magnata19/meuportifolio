@@ -1,0 +1,9 @@
+.sobremim {
+  box-sizing: border-box;
+  height: 80vh;
+  margin-top: 80px;
+} 
+
+.sobremim h1 {
+  color: #fff;
+}

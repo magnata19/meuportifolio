@@ -26,7 +26,7 @@ const Home = () => {
         </div>
       </div>
       {/* segunda seção */}
-      <div className={styles.informacao}>
+      {/* <div className={styles.informacao}>
         <div className={styles.minhaArea}>
           <img src={minhaFoto} alt="eu" className={styles.minhaFoto} />
         </div>
@@ -56,7 +56,7 @@ const Home = () => {
           </p>
           <p>Percebi que quanto mais eu estudava, mais queria aprender. </p>
         </div>
-      </div>
+      </div> */}
     </motion.div>
   );
 };
