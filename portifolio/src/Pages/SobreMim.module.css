@@ -55,21 +55,52 @@
 .meusHobbies h1 {
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   color: rgb(220, 107, 20);
-
-  
-
 }
 
 .containerHobbies h4 {
   font-size: 25px;
   color: rgb(220, 107, 20);
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-
 }
 
 .containerHobbies strong {
   text-decoration: underline;
   color: rgb(220, 107, 20);
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
 
+@media (width < 764px) {
+  .sobremim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .minhaDescricaoCentro {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .meusHobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  .containerHobbies {
+    word-break: break-all;
+  }
+
+  .minhaFoto {
+    width: 40%;
+  }
+
+  .minhaDescricao p{
+    width: 400px;
+    font-size: 20px;
+  }
 }
