@@ -1,15 +1,19 @@
 import "./App.css";
 
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import SobreMim from "./Pages/SobreMim";
 
-import AppRoutes from "./routes/app.routes";
 import Header from "./components/Header";
 
 function App() {
   return (
     <BrowserRouter>
       <Header />
-      <AppRoutes />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sobremim" element={<SobreMim />} />
+      </Routes>
     </BrowserRouter>
   );
 }

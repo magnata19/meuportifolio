@@ -63,7 +63,7 @@
     position: fixed;
     top: 5vh;
     right: 0;
-    width: 40%;
+    width: 50%;
     height: 96vh;
     flex-direction: column;
     transform: translateX(100%);
